@@ -1,80 +1,90 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  height: 100vh;
   width: 100%;
+  min-height: 100vh;
   background-image: url("./../images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: grid;
-  place-content: center;
-  justify-items: center;
-  gap: 15px; 
-  justify-content: center;
-  align-items: center;
-  color: #926239;
   text-align: center;
+  color: #926239;
+  padding: 250px 20px; 
 }
 
 h1 {
-    font-size: 70px;
+  font-size: 70px;
+  margin-bottom: 20px;
 }
 
-p {
-    font-size: 25px;
+header p {
+  font-size: 25px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
 }
 
 .button {
-    text-decoration: none;
-    border: 1px #926239 solid;
-    font-size: 30px;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin-top: 20px;
-    color: #926239;
-
+  display: inline-block;
+  text-decoration: none;
+  border: 1px #926239 solid;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #926239;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
-    background-color: #926239;
-    color: white;
+  background-color: #926239;
+  color: white;
 }
 
 .section-a {
-    text-align: center;
-    padding: 20px;
-    color: white;
-    background-color: #926239;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  background-color: #926239;
 }
 
 .section-b {
-    text-align: center;
-    padding: 20px;
-    color: #926239;
-    background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 40px 20px;
+  color: #926239;
+  background-color: white;
+}
+
+.section-a p, .section-b p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .section-c {
-    width: 100%;
-    font-size: 0;
+  width: 100%;
+  font-size: 0;
 }
 
 .section-c > div {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.33%;
-    font-size: 16px;
-    color: white;
-    padding: 20px;
-    background-color: #926239;
+  display: inline-block;
+  vertical-align: top;
+  width: 33.333%;
+  font-size: 16px;
+  padding: 40px 20px;
+  color: white;
+  background-color: #926239;
+  text-align: left;
 }
 
 .section-c > .block-b {
-    color: #926239;
-    background-color: white;
+  color: #926239;
+  background-color: white;
+}
+
+.section-c p {
+  font-size: 14px;
+  line-height: 1.5;
 }
