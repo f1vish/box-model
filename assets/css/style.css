@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  line-height: 1.6;
+}
+
 .banner {
   width: 100%;
   min-height: 100vh;
@@ -43,25 +47,24 @@
   color: white;
 }
 
-.about {
+.about,
+.info {
   text-align: center;
   padding: 40px 20px;
+}
+
+.about {
   color: white;
   background-color: #926239;
 }
 
 .info {
-  text-align: center;
-  padding: 40px 20px;
   color: #926239;
   background-color: white;
 }
 
-.about p {
-  font-size: 16px;
-}
-
-.info-details p {
+.about p,
+.info p {
   font-size: 16px;
 }
 
