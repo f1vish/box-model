@@ -1,45 +1,55 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
+  text-align: center;
+}
+
+.light {
+  background-color: white;
+  color: #926239;
+}
+
+.dark {
+  background-color: #926239;
+  color: white;
 }
 
 .banner {
-  width: 100%;
   min-height: 100vh;
-  background-image: url("./../images/bg.jpg");
+  padding: 250px 20px;
+  background-image: url(./../images/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  color: #926239;
-  padding: 250px 20px; 
 }
 
 .banner_title {
   font-size: 70px;
+  text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 .banner_text {
-  font-size: 25px;
   max-width: 800px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 40px;
+  font-size: 25px;
 }
 
 .button {
   display: inline-block;
-  text-decoration: none;
-  border: 1px #926239 solid;
-  font-size: 30px;
   padding: 10px 20px;
+  border: 1px #926239 solid;
   border-radius: 15px;
-  color: #926239;
+  font-size: 30px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .button:hover {
@@ -48,42 +58,13 @@ body {
 }
 
 .about,
-.info {
-  text-align: center;
+.info,
+.card {
   padding: 40px 20px;
-}
-
-.about {
-  color: white;
-  background-color: #926239;
-}
-
-.info {
-  color: #926239;
-  background-color: white;
-}
-
-.about p,
-.info p {
-  font-size: 16px;
-}
-
-.services {
-  width: 100%;
 }
 
 .card {
   display: inline-block;
-  vertical-align: top;
   width: 33.333%;
-  padding: 40px 20px;
   text-align: left;
-  font-size: 14px;
-  color: white;
-  background-color: #926239;
-}
-
-.card_light {
-  color: #926239;
-  background-color: white;
 }
